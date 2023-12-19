@@ -25,6 +25,7 @@ const StoryList: FC<StoryListProps> = ({
   paused,
   onLoad,
   videoProps,
+  imageProps,
   progressColor,
   progressActiveColor,
   ...props
@@ -66,6 +67,7 @@ const StoryList: FC<StoryListProps> = ({
           paused={paused}
           isActive={isActive}
           videoProps={videoProps}
+          imageProps={imageProps}
         />
         <Progress
           active={isActive}

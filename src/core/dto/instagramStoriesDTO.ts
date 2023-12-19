@@ -32,6 +32,7 @@ export interface InstagramStoriesProps {
   showName?: boolean;
   nameTextStyle?: TextStyle;
   videoProps?: any;
+  imageProps?: any;
   closeIconColor?: string;
   progressActiveColor?: string;
   progressColor?: string;

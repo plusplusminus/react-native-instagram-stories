@@ -19,6 +19,7 @@ const StoryImage: FC<StoryImageProps> = ({
   isDefaultVideo,
   paused,
   videoProps,
+  imageProps,
   isActive,
   onImageLayout,
   onLoad,
@@ -110,6 +111,7 @@ const StoryImage: FC<StoryImageProps> = ({
                 onImageLayout(Math.min(HEIGHT, e.nativeEvent.layout.height))
               }
               onLoad={() => onContentLoad()}
+              {...imageProps}
             />
           ))}
       </View>

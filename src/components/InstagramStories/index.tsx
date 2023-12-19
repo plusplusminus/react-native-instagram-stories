@@ -51,6 +51,7 @@ const InstagramStories = forwardRef<
       nameTextStyle,
       videoAnimationMaxDuration,
       videoProps,
+      imageProps,
       closeIconColor = CLOSE_COLOR,
       ...props
     },
@@ -225,6 +226,7 @@ const InstagramStories = forwardRef<
           backgroundColor={backgroundColor}
           videoDuration={videoAnimationMaxDuration}
           videoProps={videoProps}
+          imageProps={imageProps}
           closeIconColor={closeIconColor}
           {...props}
         />

@@ -44,6 +44,7 @@ const StoryModal = forwardRef<StoryModalPublicMethods, StoryModalProps>(
       containerStyle,
       backgroundColor,
       videoProps,
+      imageProps,
       closeIconColor,
       modalAnimationDuration = 800,
       onLoad,
@@ -320,6 +321,7 @@ const StoryModal = forwardRef<StoryModalPublicMethods, StoryModalProps>(
                   buttonHandled={buttonHandled}
                   paused={paused}
                   videoProps={videoProps}
+                  imageProps={imageProps}
                   closeColor={closeIconColor}
                   key={story.id}
                   {...props}
