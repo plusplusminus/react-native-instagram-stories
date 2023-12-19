@@ -1,7 +1,7 @@
-import { SharedValue } from 'react-native-reanimated';
-import { TextStyle, ViewStyle } from 'react-native';
-import { InstagramStoryProps } from './instagramStoriesDTO';
-import { ProgressStorageProps } from './helpersDTO';
+import { SharedValue } from "react-native-reanimated";
+import { TextStyle, ViewStyle } from "react-native";
+import { InstagramStoryProps } from "./instagramStoriesDTO";
+import { ProgressStorageProps } from "./helpersDTO";
 
 export interface StoryAvatarProps extends InstagramStoryProps {
   loadingStory: SharedValue<string | undefined>;
@@ -35,24 +35,24 @@ export interface StoryModalProps {
   progressColor?: string;
   modalAnimationDuration?: number;
   onLoad: () => void;
-  onShow?: ( id: string ) => void;
-  onHide?: ( id: string ) => void;
-  onSeenStoriesChange: ( user: string, value: string ) => void;
-  onSwipeUp?: ( userId?: string, storyId?: string ) => void;
+  onShow?: (id: string) => void;
+  onHide?: (id: string) => void;
+  onSeenStoriesChange: (user: string, value: string) => void;
+  onSwipeUp?: (userId?: string, storyId?: string) => void;
 }
 
 export type StoryModalPublicMethods = {
-  show: ( id: string ) => void;
+  show: (id: string) => void;
   hide: () => void;
 };
 
 export type GestureContext = {
-  x: number,
-  pressedX: number,
-  pressedAt: number,
-  moving: boolean,
-  vertical: boolean,
-  userId?: string,
+  x: number;
+  pressedX: number;
+  pressedAt: number;
+  moving: boolean;
+  vertical: boolean;
+  userId?: string;
 };
 
 export interface AnimationProps {
@@ -62,15 +62,15 @@ export interface AnimationProps {
 }
 
 export interface StoryImageProps {
-  stories: InstagramStoryProps['stories'];
+  stories: InstagramStoryProps["stories"];
   activeStory: SharedValue<string | undefined>;
   defaultImage: string | undefined;
   isDefaultVideo: boolean;
   paused: SharedValue<boolean>;
   videoProps?: any;
   isActive: SharedValue<boolean>;
-  onImageLayout: ( height: number ) => void;
-  onLoad: ( duration?: number ) => void;
+  onImageLayout: (height: number) => void;
+  onLoad: (duration?: number) => void;
 }
 
 export interface StoryProgressProps {
@@ -82,7 +82,8 @@ export interface StoryProgressProps {
   progressColor?: string;
 }
 
-export interface StoryProgressItemProps extends Omit<StoryProgressProps, 'length'> {
+export interface StoryProgressItemProps
+  extends Omit<StoryProgressProps, "length"> {
   index: number;
   width: number;
 }
@@ -102,7 +103,7 @@ export interface IconProps {
 }
 
 export interface StoryContentProps {
-  stories: InstagramStoryProps['stories'];
+  stories: InstagramStoryProps["stories"];
   active: SharedValue<boolean>;
   activeStory: SharedValue<string | undefined>;
 }
@@ -118,13 +119,13 @@ export interface StoryListProps extends InstagramStoryProps, StoryHeaderProps {
   videoProps?: any;
   progressActiveColor?: string;
   progressColor?: string;
-  onLoad: ( duration?: number ) => void;
+  onLoad: (duration?: number) => void;
 }
 
 export interface StoryVideoProps {
   uri: string;
   paused: SharedValue<boolean>;
   isActive: SharedValue<boolean>;
-  onLoad: ( duration: number ) => void;
-  onLayout: ( height: number ) => void;
+  onLoad: (duration: number) => void;
+  onLayout: (height: number) => void;
 }
