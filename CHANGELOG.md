@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/plusplusminus/react-native-instagram-stories/compare/v1.0.14...v1.1.0) (2023-12-19)
+
+
+### Features
+
+* **Image:** add image props ([e41e59b](https://github.com/plusplusminus/react-native-instagram-stories/commit/e41e59bf833eaa980c7c32a2432b840451f18dfa))
+
 ### [1.0.14](https://github.com/plusplusminus/react-native-instagram-stories/compare/v1.0.13...v1.0.14) (2023-12-19)
 
 ### 1.0.13 (2023-12-08)
